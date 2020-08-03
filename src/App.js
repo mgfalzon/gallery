@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState, useEffect} from 'react' 
+import {Container} from 'react-bootstrap'
+import Settings from './Components/Settings'
+import Gallery from './Components/Gallery'
+import {bg} from './Components/Utils'
 
-function App() {
+const Header = () => (
+  <div style={{paddingLeft: '5rem', paddingTop: '4rem'}}>
+    <p className='display-3 font-weight-bolder text-uppercase'>Gallery</p>
+    <p className='ml-4 text-muted'>Joshua Malebay</p>
+  </div>
+)
+
+const App = () => {
+  const [cols, setCols] = useState(4)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Container fluid style={{backgroundColor: bg}}>
+      <Settings 
+        small={() => setCols(5)}
+        medium={() => setCols(4)}
+        large={() => setCols(3)}
+      />
+      <Header />
+      <Gallery cols={cols}/>
+    </Container>
+    )
 }
 
-export default App;
+export default App
