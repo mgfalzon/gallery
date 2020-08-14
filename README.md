@@ -1,6 +1,6 @@
 # Gallery
 
-<img src="https://image.flaticon.com/icons/svg/533/533255.svg" align="right"
+<img src="https://image.flaticon.com/icons/svg/105/105460.svg" align="right"
      alt="Picture/Gallery Logo" width="120" height="178">
 
 An art gallery for a friend -Joshua Malekan
