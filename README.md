@@ -12,7 +12,7 @@ An art gallery for a friend -Joshua Malekan
   sized to fit nicely with the rest of the project
   
 <br/>
-<a href="http://mgfalzon.github.io/gallery">Live Demo</a>
+<a href="http://mgfalzon.github.io/gallery" target="_blank">Live Demo</a>
 
 
 <h4 align="center">Preview</h4>
