@@ -1,14 +1,11 @@
 import React from 'react' 
 import {Row, Col} from 'react-bootstrap'
-import {BrowserRouter as Router, Switch, Route, NavLink} from 'react-router-dom'
+import {HashRouter as Router, Switch, Route, NavLink} from 'react-router-dom'
 import Img from './Img'
 import {numImgs, rows, FullPages} from './Utils'
 import FadeIn from 'react-fade-in';
 
-/*
-  Splits imgs array(all images) into grids of equal size for every page
-  DO NOT TOUCH THIS METHOD... it is more complicated than it looks
-*/
+// Splits imgs array (all images) into grids of equal size for every page
 const PageSplit = imgsPerPage => {
   let imgs =  Array(numImgs).fill().map((item, i) => <Img i={i} />)
   let pages = []
@@ -40,8 +37,14 @@ const Pagination = ({p}) => {
   <div className='d-flex justify-content-center py-4'>
     <div className='px-3 py-2 bg-white shadow-sm rounded-pill'>
       {a.map(i =>
-      <NavLink  exact to={'/' + (i === 1 ? '' : i)}>
-        <small className='px-3'>{i}</small>
+      <NavLink  exact to={'/' + (i === 1 ? '' : i)}  >
+          <small className='px-3' 
+            onClick={() => window.scrollTo({
+              top: 0,
+              left: 0,
+              behavior: 'smooth'
+            })} 
+          >{i}</small>
       </NavLink>
       )}
     </div>
