@@ -3,7 +3,7 @@
 <img src="https://image.flaticon.com/icons/svg/105/105460.svg" align="right"
      alt="Picture/Gallery Logo" width="120" height="178">
 
-An art gallery for a friend -Joshua Malekan
+An art gallery for a friend - Joshua Malekan
 
 * 3 views - small, medium, large
 * Designed with flexibility in mind. The gallery app will group any number of
