@@ -1,4 +1,4 @@
-# Gallery
+# Art Gallery
 
 <img src="https://image.flaticon.com/icons/svg/105/105460.svg" align="right"
      alt="Picture/Gallery Logo" width="120" height="178">
