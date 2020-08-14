@@ -15,5 +15,5 @@ An art gallery for a friend -Joshua Malekan
 <h4 align="center">Preview</h4>
 
 <p align="center">
-  <img src="./screenshot.png" alt="Homepage Image">
+  <img src="./screenshot.PNG" alt="Homepage Image">
 </p>
